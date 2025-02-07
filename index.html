@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC - Balança Visual</title>
+    <title>Calculadora de Adição - Brincar de Somar</title>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--CSS da página-->
@@ -11,24 +11,29 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Calculadora de IMC - Balança Visual</h1>
+        <h1 class="text-center">Brincar de Somar</h1>
         <div class="balanca">
             <div class="slider-container">
-                <label for="peso">Peso (Kg):</label>
-                <input type="range" id="peso" min="0" max="200" value="70" class="form-range">
-                <div class="display" id="pesoDisplay">70 Kg</div>
+                <label for="pnumero">1° Número:</label>
+                <input type="range" id="pnumero" min="0" max="100" value="20" class="form-range">
+                <div class="display" id="pnumeroDisplay">20</div>
             </div>
-        
 
-            <div class="slider-container">
-                <label for="altura">Altura (m,cm):</label>
-                <input type="range" id="altura" min="0" max="250" value="175" class="form-range">
-                <div class="display" id="alturaDisplay"> 1,75 m </div> 
-            </div>
-            <button id="calcularBtn" class="btn btn-primary">Calcular IMC</button>
-            <div class="resultado" id="resultado"></div>
+        <div class="slider-container">
+            <label for="snumero">2° Número:</label>
+            <input type="range" id="snumero" min="0" max="100" value="30" class="form-range">
+            <div class="display" id="snumeroDisplay">30</div>
         </div>
+        <button id="somaBtn" class="btn btn-primary">Somar Números</button>
+        <div class="resultado" id="resultado"></div>
     </div>
+</div>
+
+
+
+
+
+
 
 
 
