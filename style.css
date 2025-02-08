@@ -1,0 +1,44 @@
+body{
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background-image: url(https://leonora.vteximg.com.br/arquivos/ids/165521-1000-1000/calculadora_de_mesa_12_digitos_rosa_neo_solar_letron_99337_1.jpg?v=638448932165000000);
+    background-position: 50% 150%;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+.balanca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.balanca input{
+    width: 80%;
+    margin: 10px 0;
+}
+
+.balanca .display{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.resultado{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.slider-container{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.slider-container label{
+    display: block;
+    margin-bottom: 10px;
+}
