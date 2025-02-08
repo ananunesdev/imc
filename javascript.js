@@ -1,77 +1,80 @@
-const pesoSlider = document.getElementById('peso');
-const alturaSlider = document.getElementById('altura');
-const pesoDisplay = document.getElementById('pesoDisplay');
-const alturaDisplay = document.getElementById('alturaDisplay');
-const calcularBtn = document.getElementById('calcularBtn');
+const pnumeroSlider = document.getElementById('pnumero');
+const snumeroSlider = document.getElementById('snumero');
+const pnumeroDisplay = document.getElementById('pnumeroDisplay');
+const snumeroDisplay = document.getElementById('snumeroDisplay');
+const calcularsom = document.getElementById('calcularBtn');
 const resultadoDiv = document.getElementById('resultado');
  
 //Atualiza o display do numero 1
-pesoSlider.addEventListener('input', () => {
-    pesoDisplay.textContent = `${pesoSlider.value}`;
+pnumeroSlider.addEventListener('input', () => {
+    pnumeroDisplay.textContent = `${pnumeroSlider.value}`;
 });
  
 //Atualiza o display de numero 2
-alturaSlider.addEventListener('input', () => {
-    alturaDisplay.textContent = `${alturaSlider.value}`;
+snumeroSlider.addEventListener('input', () => {
+    snumeroDisplay.textContent = `${snumeroSlider.value}`;
 });
  
 //Calcular Adição
-calcularBtn.addEventListener('click',() => {
-    const peso = parseFloat(pesoSlider.value);
-    const alturaCm = parseFloat(alturaSlider.value);
+calcularsom.addEventListener('click',() => {
+    const numeroum = parseFloat(pnumeroSlider.value);
+    const numerodois = parseFloat(snumeroSlider.value);
  
-    if(alturaCm < 0||peso <=0){
+    if(numerodois < 0||numeroum <=0){
         alert("Por favor, insira valores válidos para os dois números.");
         return;
     }
  
-    const imc = peso + alturaCm;
+    const soma = numeroum + numerodois;
  
  
-    resultadoDiv.innerHTML = `Seu Resultado é: ${imc}`;
+    resultadoDiv.innerHTML = `Seu Resultado é: ${soma}`;
 });
  
+//Calcular Subtração
 calcularsub.addEventListener('click',() => {
-    const peso = parseFloat(pesoSlider.value);
-    const alturaCm = parseFloat(alturaSlider.value);
+    const numeroum = parseFloat(pnumeroSlider.value);
+    const numerodois = parseFloat(snumeroSlider.value);
  
-    if(alturaCm < 0||peso <=0){
+    if(numerodois < 0||numeroum <=0){
         alert("Por favor, insira valores válidos para os dois números.");
         return;
     }
  
-    const imc = peso - alturaCm;
+    const sub = numeroum - numerodois;
  
  
-    resultadoDiv.innerHTML = `Seu Resultado é: ${imc}`;
+    resultadoDiv.innerHTML = `Seu Resultado é: ${sub}`;
 });
  
+//Calcular Multiplicação
 calcularmult.addEventListener('click',() => {
-    const peso = parseFloat(pesoSlider.value);
-    const alturaCm = parseFloat(alturaSlider.value);
+    const numeroum = parseFloat(pnumeroSlider.value);
+    const numerodois = parseFloat(snumeroSlider.value);
  
-    if(alturaCm < 0||peso <=0){
+    if(numerodois < 0||numeroum <=0){
         alert("Por favor, insira valores válidos para os dois números.");
         return;
     }
  
-    const imc = peso * alturaCm;
+    const mult = numeroum * numerodois;
  
  
-    resultadoDiv.innerHTML = `Seu Resultado é: ${imc}`;
+    resultadoDiv.innerHTML = `Seu Resultado é: ${mult}`;
 });
  
+//Calcular Divisão
 calculardivisao.addEventListener('click',() => {
-    const peso = parseFloat(pesoSlider.value);
-    const alturaCm = parseFloat(alturaSlider.value);
+    const numeroum = parseFloat(pnumeroSlider.value);
+    const numerodois = parseFloat(snumeroSlider.value);
  
-    if(alturaCm < 0||peso <=0){
+    if(numerodois < 0||numeroum <=0){
         alert("Por favor, insira valores válidos para os dois números.");
         return;
     }
  
-    const imc = peso / alturaCm;
+    const divi = numeroum / numerodois;
  
  
-    resultadoDiv.innerHTML = `Seu Resultado é: ${imc}`;
+    resultadoDiv.innerHTML = `Seu Resultado é: ${divi}`;
 });
